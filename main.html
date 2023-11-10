@@ -10,9 +10,9 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
-	<form>
-		<label for="name"> Name</label><br>
-  <input type="text" id="name" name="fname" required, placeholder= Name><br>
+	<form action="/action_page.php" method="post">
+		<label for="name">Name</label><br>
+  <input type="text" id="name" name="fname" ,required, placeholder= Name><br>
 
 		
 		<label for="email">Email</label>
@@ -39,19 +39,22 @@
   <input type="number" id="age" name="age" required, placeholder=Age><br>
 
 		
-	<label for="birthday">DOB</label>
+	<label for="dob">DOB</label>
   <input type="date" id="dob" name="birthday" required><br>
 
  <label for="phone">Phone Number</label>
-  <input type="tel" id="phone" name="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3} ,placeholder=xxx-xxx-xxxx"><br>
+  <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3} ,placeholder=xxx-xxx-xxxx"><br>
 		
 <label for="password">Password</label><br> 
 		<input type="password" id="password" name="pwd" required placeholder=password><br>
 
 		
 		<input type="checkbox" id="tos" name="vehicle1" value="Bike" required>
-  <label for="vehicle1"> I agree to the TOS</label><br>
+  <label for="tos"> I agree to the TOS</label><br>
+
+		
 	</form>
+	<button type="submit" form="form1" value="Submit">Submit</button>
 
 </body>
 
